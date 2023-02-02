@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Route, Switch } from "react-router-dom";
 
 import NavBar from "./NavBar";
@@ -8,13 +8,25 @@ import TaskContainer from "./TaskContainer";
 import ShoppingContainer from "./ShoppingContainer";
 
 function App() {
+  const [goals, setGoals] = useState ([]);
+  const [tasks, setTasks] = useState ([]);
+  const [shoppingList, setShoppingList] = useState([])
+
+  useEffect(() => {
+    fetch("http://localhost:3004/goals")
+      .then (resp => resp.json())
+      .then(goalList => setGoals(goalList));
+
+    // fetch("http://")
+  }, [])
+
   return (
     <div>
       <NavBar />
       <Form />
       <Switch>
         <Route exact path="/">
-          <GoalContainer />
+          <GoalContainer goals={goals} />
         </Route>
         <Route path="/weeklytasks">
         <TaskContainer />

@@ -1,11 +1,18 @@
 import React from "react";
 import GoalList from "./GoalList";
 
-function GoalContainer() {
+function GoalContainer({ goals }) {
 
-    return(
+    const mappedGoals = goals.map((goal) => <GoalList 
+        key={goal.id}
+        goal={goal}
+        />
+       )
+    
+
+    return (
         <div>
-            <GoalList />
+           {mappedGoals}
         </div>
     )
 }

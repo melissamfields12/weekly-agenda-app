@@ -1,9 +1,13 @@
 import React from "react";
 
-function GoalList() {
-
+function GoalList({goal}) {
+    const {name, time, progress} = goal
     return (
-        <div></div>
+        <div>
+            <h4>{name}</h4>
+            <p>{time}</p>
+            <p>Progress: {progress}% completed</p>
+        </div>
     )
 }
 
