@@ -1,0 +1,96 @@
+{
+    "tasks": [
+        {
+            "id": 1,
+            "name": "Check and sort through the mail",
+            "time": "10 minutes",
+            "isCompleted": false
+        },
+        {
+            "id": 2,
+            "name": "Get kids supplies for school project",
+            "time": "30 minutes",
+            "isCompleted": false
+        },
+        {
+            "id": 3,
+            "name": "Update shopping list",
+            "time": "5 minutes",
+            "isCompleted": false
+        },
+        {
+            "id": 4,
+            "name": "Go grocery shopping",
+            "time": "60 minutes",
+            "isCompleted": false
+        },
+        {
+            "id": 5,
+            "name": "Clean the house",
+            "time": "30 minutes",
+            "isCompleted": false
+        },
+        {
+            "id": 6,
+            "name": "Put laundry in washer and dryer",
+            "time": "10 minutes",
+            "isCompleted": false
+        },
+        {
+            "id": 7,
+            "name": "Fold the laundry",
+            "time": "30 minutes",
+            "isCompleted": false
+        }
+    ],
+    "shoppingList": [
+        {
+            "id": 1,
+            "name": "Milk",
+            "category": "Dairy",
+            "isBought": false
+        },
+        {
+            "id": 2,
+            "name": "Steaks",
+            "category": "Meat",
+            "isBought": false
+        },
+        {
+            "id": 3,
+            "name": "Yogurt",
+            "category": "Dairy",
+            "isBought": false
+        },
+        {
+            "id": 4,
+            "name": "Chicken breast",
+            "category": "Meat",
+            "isBought": false
+        },
+        {
+            "id": 5,
+            "name": "Bell peppers",
+            "category": "Produce",
+            "isBought": false
+        },
+        {
+            "id": 6,
+            "name": "Onions",
+            "category": "Produce",
+            "isBought": false
+        },
+        {
+            "id": 7,
+            "name": "Energy drinks",
+            "category": "Beverage",
+            "isBought": false
+        },
+        {
+            "id": 8,
+            "name": "Coffee beans",
+            "category": "Beverage",
+            "isBought": false
+        }
+    ]
+}
