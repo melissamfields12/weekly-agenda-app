@@ -21,7 +21,7 @@
         {
             "id": 4,
             "name": "Go grocery shopping",
-            "time": "60 minutes",
+            "time": "1 hour",
             "isCompleted": false
         },
         {
@@ -91,6 +91,44 @@
             "name": "Coffee beans",
             "category": "Beverage",
             "isBought": false
+        }
+    ],
+    "goals": [
+        {
+            "id": 1,
+            "name": "Exercise for at least two hours total",
+            "time": "2 hours",
+            "progress": 40
+        },
+        {
+            "id": 2,
+            "name": "Meditate at least three times",
+            "time": "45 minutes",
+            "progress": 40
+        },
+        {
+            "id": 3,
+            "name": "Get some yardwork done",
+            "time": "30 minutes",
+            "progress": 0
+        },
+        {
+            "id": 4,
+            "name": "Begin a new book",
+            "time": "1 hour",
+            "progress": 0
+        },
+        {
+            "id": 5,
+            "name": "Practice coding",
+            "time": "5 hours",
+            "progress": 80
+        },
+        {
+            "id": 6, 
+            "name": "Find a new trail to take a walk on",
+            "time": "1 hour",
+            "progress": 0
         }
     ]
 }
