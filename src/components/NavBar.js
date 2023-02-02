@@ -3,11 +3,19 @@ import { NavLink } from "react-router-dom";
 
 function NavBar() {
     const linkStyle = {
-
+        color: "#008B8B",
+        padding: "10px 5px",
+        marginRight: "20px",
+        background: "#FFF8DC",
+        border: "solid",
+        borderRadius: "2px",
+        borderWidth: "2px"
     }
 
-    const activeStyle ={
-
+    const activeStyle = {
+        color: "#F08080",
+        border: "solid",
+        fontWeight: "bold"
     }
 
     return (
