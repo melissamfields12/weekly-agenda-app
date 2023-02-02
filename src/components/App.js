@@ -14,10 +14,12 @@ function App() {
 
   useEffect(() => {
     fetch("http://localhost:3004/goals")
-      .then (resp => resp.json())
+      .then(resp => resp.json())
       .then(goalList => setGoals(goalList));
 
-    // fetch("http://")
+    fetch("http://localhost:3004/tasks")
+      .then(resp => resp.json())
+      .then(taskList => setTasks(taskList));
   }, [])
 
   return (
@@ -29,7 +31,7 @@ function App() {
           <GoalContainer goals={goals} />
         </Route>
         <Route path="/weeklytasks">
-        <TaskContainer />
+        <TaskContainer tasks={tasks}/>
         </Route>
         <Route path="/shoppinglist">
           <ShoppingContainer />

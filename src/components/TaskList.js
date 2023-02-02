@@ -1,9 +1,12 @@
 import React from "react";
 
-function TaskList() {
-
+function TaskList({task}) {
+    const {name, time} = task;
     return (
-        <div></div>
+        <div>
+            <h4>{name}</h4>
+            <p>{time}</p>
+        </div>
     )
 }
 
