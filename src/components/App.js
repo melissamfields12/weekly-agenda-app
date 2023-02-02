@@ -20,6 +20,10 @@ function App() {
     fetch("http://localhost:3004/tasks")
       .then(resp => resp.json())
       .then(taskList => setTasks(taskList));
+    
+    fetch("http://localhost:3004/shoppinglist")
+      .then(resp => resp.json())
+      .then(shoppingData => setShoppingList(shoppingData))
   }, [])
 
   return (
@@ -34,7 +38,7 @@ function App() {
         <TaskContainer tasks={tasks}/>
         </Route>
         <Route path="/shoppinglist">
-          <ShoppingContainer />
+          <ShoppingContainer shoppingList={shoppingList}/>
         </Route>
       </Switch>
     </div>

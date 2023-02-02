@@ -1,6 +1,6 @@
 import React from "react";
 
-function TaskList({task}) {
+function TaskList({ task }) {
     const {name, time} = task;
     return (
         <div>

@@ -1,11 +1,18 @@
 import React from "react";
 import ShoppingList from "./ShoppingList";
 
-function ShoppingContainer() {
+function ShoppingContainer({ shoppingList }) {
+
+    const mappedList = shoppingList.map((shoppingItem) => 
+    <ShoppingList 
+    key={shoppingItem.id}
+    shoppingItem={shoppingItem}
+    />
+   )
 
     return (
         <div>
-            <ShoppingList />
+            {mappedList}
         </div>
     )
 }

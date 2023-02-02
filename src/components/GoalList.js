@@ -1,6 +1,6 @@
 import React from "react";
 
-function GoalList({goal}) {
+function GoalList({ goal }) {
     const {name, time, progress} = goal
     return (
         <div>
