@@ -5,7 +5,6 @@ function GoalList({ goal }) {
     return (
             <li>
             <span>{name}</span>
-            <span className="time">Time: {time}</span>
             <span className="progress">Progress: {progress}% completed</span>
             </li>
     )
