@@ -3,14 +3,13 @@ import { Route, Switch } from "react-router-dom";
 
 import NavBar from "./NavBar";
 import Form from "./Form";
+import Home from "./Home";
 import GoalContainer from "./GoalContainer";
 import TaskContainer from "./TaskContainer";
-import ShoppingContainer from "./ShoppingContainer";
 
 function App() {
   const [goals, setGoals] = useState ([]);
   const [tasks, setTasks] = useState ([]);
-  const [shoppingList, setShoppingList] = useState([])
 
   useEffect(() => {
     fetch("http://localhost:3004/goals")
@@ -20,10 +19,6 @@ function App() {
     fetch("http://localhost:3004/tasks")
       .then(resp => resp.json())
       .then(taskList => setTasks(taskList));
-    
-    fetch("http://localhost:3004/shoppinglist")
-      .then(resp => resp.json())
-      .then(shoppingData => setShoppingList(shoppingData))
   }, [])
 
   return (
@@ -32,13 +27,13 @@ function App() {
       <Form />
       <Switch>
         <Route exact path="/">
-          <GoalContainer goals={goals} />
+          <Home />
+        </Route>
+        <Route path="/weeklygoals">
+        <GoalContainer goals={goals}/>
         </Route>
         <Route path="/weeklytasks">
-        <TaskContainer tasks={tasks}/>
-        </Route>
-        <Route path="/shoppinglist">
-          <ShoppingContainer shoppingList={shoppingList}/>
+          <TaskContainer tasks={tasks}/>
         </Route>
       </Switch>
     </div>

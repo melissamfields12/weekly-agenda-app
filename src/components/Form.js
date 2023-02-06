@@ -10,14 +10,10 @@ function Form() {
         name: '',
         time: ''
     })
-    const [shoppingData, setShoppingData] = useState({
-        name: '',
-        category: ''
-    })
 
     return (
         <section id="new-item-form">
-            <h3>Add a new item to your weekly agenda</h3>
+            <span>Add a new item to your weekly agenda</span>
             <form>
                 <select
                     name="form-type">

@@ -25,19 +25,19 @@ function NavBar() {
             to="/" exact style={linkStyle}
             activeStyle={activeStyle}
             >
-            Weekly Goals   
+            Home   
+        </NavLink>
+        <NavLink
+            to="/weeklygoals" exact style={linkStyle}
+            activeStyle={activeStyle}
+            >
+            Weekly Goals
         </NavLink>
         <NavLink
             to="/weeklytasks" exact style={linkStyle}
             activeStyle={activeStyle}
             >
             Weekly Tasks
-        </NavLink>
-        <NavLink
-            to="/shoppinglist" exact style={linkStyle}
-            activeStyle={activeStyle}
-            >
-            Shopping List
         </NavLink>
       </div>
     )

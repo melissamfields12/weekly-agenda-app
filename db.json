@@ -43,56 +43,6 @@
             "isCompleted": false
         }
     ],
-    "shoppingList": [
-        {
-            "id": 1,
-            "name": "Milk",
-            "category": "Dairy",
-            "isBought": false
-        },
-        {
-            "id": 2,
-            "name": "Steaks",
-            "category": "Meat",
-            "isBought": false
-        },
-        {
-            "id": 3,
-            "name": "Yogurt",
-            "category": "Dairy",
-            "isBought": false
-        },
-        {
-            "id": 4,
-            "name": "Chicken breast",
-            "category": "Meat",
-            "isBought": false
-        },
-        {
-            "id": 5,
-            "name": "Bell peppers",
-            "category": "Produce",
-            "isBought": false
-        },
-        {
-            "id": 6,
-            "name": "Onions",
-            "category": "Produce",
-            "isBought": false
-        },
-        {
-            "id": 7,
-            "name": "Energy drinks",
-            "category": "Beverage",
-            "isBought": false
-        },
-        {
-            "id": 8,
-            "name": "Coffee beans",
-            "category": "Beverage",
-            "isBought": false
-        }
-    ],
     "goals": [
         {
             "id": 1,
