@@ -24,6 +24,7 @@ function App() {
   return (
     <div>
       <NavBar />
+      <br></br>
       <Form />
       <Switch>
         <Route exact path="/">
