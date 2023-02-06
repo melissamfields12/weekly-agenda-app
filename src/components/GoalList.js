@@ -3,11 +3,11 @@ import React from "react";
 function GoalList({ goal }) {
     const {name, time, progress} = goal
     return (
-        <div>
-            <h4>{name}</h4>
-            <p>{time}</p>
-            <p>Progress: {progress}% completed</p>
-        </div>
+            <li>
+            <span>{name}</span>
+            <span className="time">{time}</span>
+            <span className="progress">Progress: {progress}% completed</span>
+            </li>
     )
 }
 

@@ -3,11 +3,11 @@ import React from "react";
 function ShoppingList({ shoppingItem }) {
 
     const {name, category} = shoppingItem
-    return (
-        <div>
-            <h4>{name}</h4>
-            <p>{category}</p>
-        </div>
+    return (  
+            <li className={shoppingItem.isBought ? "is-bought" : ""}>
+            <span>{name}</span>
+            <span className="category">{category}</span>
+            </li>
     )
 }
 

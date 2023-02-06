@@ -11,9 +11,9 @@ function ShoppingContainer({ shoppingList }) {
    )
 
     return (
-        <div>
+        <ul className="shopping-items">
             {mappedList}
-        </div>
+        </ul>
     )
 }
 

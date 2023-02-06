@@ -9,7 +9,7 @@ function NavBar() {
         background: "#FFF8DC",
         border: "solid",
         borderRadius: "2px",
-        borderWidth: "2px"
+        borderWidth: "2px",
     }
 
     const activeStyle = {

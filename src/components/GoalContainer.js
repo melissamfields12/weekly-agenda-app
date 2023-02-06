@@ -12,9 +12,9 @@ function GoalContainer({ goals }) {
     
 
     return (
-        <div>
+        <ul className="Goals">
            {mappedGoals}
-        </div>
+        </ul>
     )
 }
 
