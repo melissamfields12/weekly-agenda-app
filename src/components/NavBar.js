@@ -20,7 +20,7 @@ function NavBar() {
 
     return (
       <div>
-        <h1>Weekly Agenda</h1>
+        <h1 className="weekly-agenda">Weekly Agenda</h1>
         <NavLink
             to="/" exact style={linkStyle}
             activeStyle={activeStyle}

@@ -3,43 +3,43 @@
         {
             "id": 1,
             "name": "Check and sort through the mail",
-            "time": "10 minutes",
+            "time": "10 min",
             "isCompleted": false
         },
         {
             "id": 2,
             "name": "Get kids supplies for school project",
-            "time": "30 minutes",
+            "time": "30 min",
             "isCompleted": false
         },
         {
             "id": 3,
             "name": "Update shopping list",
-            "time": "5 minutes",
+            "time": "5 min",
             "isCompleted": false
         },
         {
             "id": 4,
             "name": "Go grocery shopping",
-            "time": "1 hour",
+            "time": "1 hr",
             "isCompleted": false
         },
         {
             "id": 5,
             "name": "Clean the house",
-            "time": "30 minutes",
+            "time": "30 min",
             "isCompleted": false
         },
         {
             "id": 6,
             "name": "Put laundry in washer and dryer",
-            "time": "10 minutes",
+            "time": "10 min",
             "isCompleted": false
         },
         {
             "id": 7,
             "name": "Fold the laundry",
-            "time": "30 minutes",
+            "time": "30 min",
             "isCompleted": false
         }
     ],
@@ -97,37 +97,37 @@
         {
             "id": 1,
             "name": "Exercise for at least two hours total",
-            "time": "2 hours",
+            "time": "2 hrs",
             "progress": 40
         },
         {
             "id": 2,
             "name": "Meditate at least three times",
-            "time": "45 minutes",
+            "time": "45 min",
             "progress": 40
         },
         {
             "id": 3,
             "name": "Get some yardwork done",
-            "time": "30 minutes",
+            "time": "30 min",
             "progress": 0
         },
         {
             "id": 4,
             "name": "Begin a new book",
-            "time": "1 hour",
+            "time": "1 hr",
             "progress": 0
         },
         {
             "id": 5,
             "name": "Practice coding",
-            "time": "5 hours",
+            "time": "5 hrs",
             "progress": 80
         },
         {
             "id": 6, 
             "name": "Find a new trail to take a walk on",
-            "time": "1 hour",
+            "time": "1 hr",
             "progress": 0
         }
     ]

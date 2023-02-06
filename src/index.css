@@ -1,19 +1,47 @@
 body {
   background-color: cornsilk;
+  margin: 1rem auto;
+  padding: 1rem 1rem;
+  max-width: 700px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 18px;
+  font-size: 17px;
 }
+
+/* .weekly-agenda {
+  align-items: center;
+  justify-content: space-between;
+} */
 
 .shopping-items {
   list-style: none;
+  border-radius: 1px;
 }
 
 .shopping-items li {
+  display: grid;
   margin: 0.7rem 0;
   padding: 0.5rem;
-  display: grid;
-  grid-template-columns: .5fr 2fr 160px 80px;
+  grid-template-columns: 1fr 1fr 160px 80px;
   column-gap: 1rem;
   align-items: center;
-  border-radius: 4px;
+  border: outset;
+  border-color: rgb(137, 177, 155);
+  border-radius: 8px;
+}
+
+.goals {
+  list-style: none;
+  border-radius: 1px;
+}
+
+.goals li {
+  display: grid;
+  margin: 0.7rem 0;
+  padding: 0.5rem;
+  grid-template-columns: 200px 150px auto 100px;
+  column-gap: 1rem;
+  align-items: center;
+  border: outset;
+  border-color: rgb(137, 177, 155);
+  border-radius: 8px;
 }
