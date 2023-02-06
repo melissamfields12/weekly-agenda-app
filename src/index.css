@@ -45,3 +45,19 @@ body {
   border-color: rgb(137, 177, 155);
   border-radius: 8px;
 }
+
+.task-list {
+  list-style: none;
+  border-radius: 1px;
+}
+.task-list li {
+  display: grid;
+  margin: 0.7rem 0;
+  padding: 0.5rem;
+  grid-template-columns: 3fr 2fr 120px 80px;
+  column-gap: 1rem;
+  align-items: center;
+  border: outset;
+  border-color: rgb(137, 177, 155);
+  border-radius: 8px;
+}

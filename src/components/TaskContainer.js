@@ -10,9 +10,9 @@ function TaskContainer({ tasks }) {
    )
 
     return (
-        <div>
+        <ul className="task-list">
             {mappedTasks}
-        </div>
+        </ul>
     )
 }
 
