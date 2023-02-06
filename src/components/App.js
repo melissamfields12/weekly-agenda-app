@@ -21,11 +21,16 @@ function App() {
       .then(taskList => setTasks(taskList));
   }, [])
 
+  function addNewItem(newItem) {
+    goals ? setGoals(goals => [...goals, newItem]) :
+    setTasks(tasks => [...tasks, newItem])
+  }
+
   return (
     <div>
       <NavBar />
       <br></br>
-      <Form />
+      <Form addNewItem={addNewItem}/>
       <Switch>
         <Route exact path="/">
           <Home />
