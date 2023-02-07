@@ -8,7 +8,8 @@ function Form({ addNewItem }) {
     })
     const [taskData, setTaskData] = useState({
         name: '',
-        time: ''
+        time: '', 
+        isCompleted: false
     })
 
     function handleTypeChange() {
@@ -28,6 +29,7 @@ function Form({ addNewItem }) {
     }
 
     function handleSubmit(e) {
+        console.log(formType)
         e.preventDefault()
        let type;
         if(formType) {
@@ -41,9 +43,9 @@ function Form({ addNewItem }) {
                 "Accept": "application/json"
             },
             body: JSON.stringify(formType ? goalData : taskData)
-        })
+            })
             .then(resp => resp.json())
-            .then(newItem => addNewItem(newItem))
+            .then(newItem => addNewItem(newItem, type))
         formType ? setGoalData({name: '', progress: ''}) :
         setTaskData({name: '', time: ''})
     }

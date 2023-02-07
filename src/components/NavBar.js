@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 function NavBar() {
-    const linkStyle = {
+    const style = {
         color: "#008B8B",
         padding: "10px 5px",
         marginRight: "20px",
@@ -22,19 +22,19 @@ function NavBar() {
       <div>
         <h1 className="weekly-agenda">Weekly Agenda</h1>
         <NavLink
-            to="/" exact style={linkStyle}
+            to="/" exact style={style}
             activeStyle={activeStyle}
             >
             Home   
         </NavLink>
         <NavLink
-            to="/weeklygoals" exact style={linkStyle}
+            to="/weeklygoals" exact style={style}
             activeStyle={activeStyle}
             >
             Weekly Goals
         </NavLink>
         <NavLink
-            to="/weeklytasks" exact style={linkStyle}
+            to="/weeklytasks" exact style={style}
             activeStyle={activeStyle}
             >
             Weekly Tasks

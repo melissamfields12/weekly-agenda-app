@@ -21,9 +21,20 @@ function App() {
       .then(taskList => setTasks(taskList));
   }, [])
 
-  function addNewItem(newItem) {
-    goals ? setGoals(goals => [...goals, newItem]) :
+  function addNewItem(newItem, type) {
+   type === "goals" ? setGoals(goals => [...goals, newItem]) :
     setTasks(tasks => [...tasks, newItem])
+  }
+
+  function updateTaskList(updatedTask) {
+    const updatedTasks = tasks.map((task) => {
+      if(task.id === updatedTask.id) {
+        return updatedTask;
+      } else {
+        return task;
+      }
+    })
+    setTasks(updatedTasks)
   }
 
   return (
@@ -36,10 +47,10 @@ function App() {
           <Home />
         </Route>
         <Route path="/weeklygoals">
-        <GoalContainer goals={goals}/>
+          <GoalContainer goals={goals}/>
         </Route>
         <Route path="/weeklytasks">
-          <TaskContainer tasks={tasks}/>
+          <TaskContainer tasks={tasks} updateTaskList={updateTaskList}/>
         </Route>
       </Switch>
     </div>

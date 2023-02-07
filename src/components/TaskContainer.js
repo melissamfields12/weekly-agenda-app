@@ -1,11 +1,12 @@
 import React from "react";
 import TaskList from "./TaskList";
 
-function TaskContainer({ tasks }) {
+function TaskContainer({ tasks, updateTaskList }) {
     const mappedTasks = tasks.map((task) => 
     <TaskList 
-    key={task.id}
-    task={task}
+        key={task.id}
+        task={task}
+        updateTaskList={updateTaskList}
     />
    )
 
