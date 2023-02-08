@@ -17,12 +17,12 @@ function TaskList({ task, updateTaskList, onDeleteTask }) {
             .then(updatedTask => updateTaskList(updatedTask))
     }
 
-    const deleteTask = () => {
+    function deleteTask() {
         fetch(`http://localhost:3004/tasks/${task.id}`, {
             method: "DELETE",
         })
             .then(resp => resp.json())
-            .then(deletedTask => onDeleteTask(deletedTask))
+            .then(() => onDeleteTask(task))
         }
 
     return (

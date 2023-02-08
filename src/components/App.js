@@ -21,6 +21,13 @@ function App() {
       .then(taskList => setTasks(taskList));
   }, [])
 
+  function onDeleteTask(deletedTask) {
+    const currentTasks = tasks.filter((task) => task.id !== deletedTask.id)
+      setTasks(currentTasks)
+    }
+  
+  
+
   function addNewItem(newItem, type) {
    type === "goals" ? setGoals(goals => [...goals, newItem]) :
     setTasks(tasks => [...tasks, newItem])
@@ -36,11 +43,6 @@ function App() {
     })
     setTasks(updatedTasks)
   }
-
-  const onDeleteTask = (deletedTask) => {
-    const currentTasks = tasks.filter((task) => task.id !== deletedTask)
-      setTasks(currentTasks)
-    }
 
   return (
     <div>
