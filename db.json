@@ -10,7 +10,7 @@
       "id": 2,
       "name": "Get kids supplies for school project",
       "time": "30 min",
-      "isCompleted": true
+      "isCompleted": false
     },
     {
       "id": 3,
@@ -37,10 +37,10 @@
       "isCompleted": false
     },
     {
-      "id": 7,
-      "name": "Fold the laundry",
-      "time": "30 min",
-      "isCompleted": false
+        "id": 7,
+        "name": "Fold the laundry",
+        "time": "30 min",
+        "isCompleted": false
     }
   ],
   "goals": [

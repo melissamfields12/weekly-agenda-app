@@ -29,13 +29,18 @@ function App() {
   function updateTaskList(updatedTask) {
     const updatedTasks = tasks.map((task) => {
       if(task.id === updatedTask.id) {
-        return updatedTask;
-      } else {
-        return task;
-      }
+          return updatedTask;
+        } else {
+          return task;
+        }
     })
     setTasks(updatedTasks)
   }
+
+  const onDeleteTask = (deletedTask) => {
+    const currentTasks = tasks.filter((task) => task.id !== deletedTask)
+      setTasks(currentTasks)
+    }
 
   return (
     <div>
@@ -50,7 +55,7 @@ function App() {
           <GoalContainer goals={goals}/>
         </Route>
         <Route path="/weeklytasks">
-          <TaskContainer tasks={tasks} updateTaskList={updateTaskList}/>
+          <TaskContainer tasks={tasks} updateTaskList={updateTaskList} onDeleteTask={onDeleteTask}/>
         </Route>
       </Switch>
     </div>
