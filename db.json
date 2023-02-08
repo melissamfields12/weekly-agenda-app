@@ -37,10 +37,10 @@
       "isCompleted": false
     },
     {
-        "id": 7,
-        "name": "Fold the laundry",
-        "time": "30 min",
-        "isCompleted": false
+      "id": 7,
+      "name": "Fold the laundry",
+      "time": "30 min",
+      "isCompleted": false
     }
   ],
   "goals": [
@@ -70,9 +70,9 @@
       "progress": 80
     },
     {
-      "id": 6,
-      "name": "Find a new trail to take a walk on",
-      "progress": 0
+        "id": 6,
+        "name": "Find a new trail to take a walk on",
+        "progress": 0
     }
   ]
 }

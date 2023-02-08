@@ -30,7 +30,9 @@ function TaskList({ task, updateTaskList, onDeleteTask }) {
             <input type="checkbox" onClick={updateTask}/>
             <span>{name}</span>
             <span>{time}</span>
-            <button onClick={deleteTask}>
+            <button 
+                onClick={deleteTask}
+                className="delete-btn">
                 X
             </button>
             </li>

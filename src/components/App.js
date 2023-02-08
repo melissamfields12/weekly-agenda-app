@@ -26,7 +26,10 @@ function App() {
       setTasks(currentTasks)
     }
   
-  
+  function onDeleteGoal(deletedGoal) {
+    const currentGoals = goals.filter((goal) => goal.id !== deletedGoal.id)
+      setGoals(currentGoals)
+  }
 
   function addNewItem(newItem, type) {
    type === "goals" ? setGoals(goals => [...goals, newItem]) :
@@ -54,7 +57,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/weeklygoals">
-          <GoalContainer goals={goals}/>
+          <GoalContainer goals={goals} onDeleteGoal={onDeleteGoal}/>
         </Route>
         <Route path="/weeklytasks">
           <TaskContainer tasks={tasks} updateTaskList={updateTaskList} onDeleteTask={onDeleteTask}/>
