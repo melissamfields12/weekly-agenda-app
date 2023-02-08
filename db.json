@@ -10,7 +10,7 @@
       "id": 2,
       "name": "Get kids supplies for school project",
       "time": "30 min",
-      "isCompleted": false
+      "isCompleted": true
     },
     {
       "id": 3,

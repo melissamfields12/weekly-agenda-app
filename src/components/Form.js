@@ -29,7 +29,6 @@ function Form({ addNewItem }) {
     }
 
     function handleSubmit(e) {
-        console.log(formType)
         e.preventDefault()
        let type;
         if(formType) {

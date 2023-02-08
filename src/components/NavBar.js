@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom";
 
 function NavBar() {
     const style = {
-        color: "#008B8B",
+        color: "#008080",
         padding: "10px 5px",
         marginRight: "20px",
-        background: "#FFF8DC",
+        background: "white",
         border: "solid",
         borderRadius: "2px",
         borderWidth: "2px",
@@ -15,7 +15,7 @@ function NavBar() {
     const activeStyle = {
         color: "#F08080",
         border: "solid",
-        fontWeight: "bold"
+        fontWeight: "bold",
     }
 
     return (
