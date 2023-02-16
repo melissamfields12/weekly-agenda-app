@@ -1,5 +1,4 @@
 import React from "react";
-import { Progress } from 'semantic-ui-react';
 
 function GoalList({ goal, onDeleteGoal }) {
     const {name, progress} = goal
@@ -17,7 +16,13 @@ function GoalList({ goal, onDeleteGoal }) {
             <span>{name}</span>
             <br></br>
             {/* <span className="progress">{progress}% completed</span> */}
-            <Progress value={progress} total='100' progress='percent' size='small'></Progress>
+            <input 
+            type="range"
+            min="0"
+            max="100"
+            className="progress-bar"
+            value={progress}
+            />
             <button 
                 onClick={deleteGoal}
                 className="delete-btn">
