@@ -70,9 +70,9 @@
       "progress": 80
     },
     {
-        "id": 6,
-        "name": "Find a new trail to take a walk on",
-        "progress": 0
+      "id": 6,
+      "name": "Find a new trail to take a walk on",
+      "progress": 0
     }
   ]
 }

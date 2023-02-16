@@ -50,10 +50,13 @@ function Form({ addNewItem }) {
     }
 
     return (
-        <section id="new-item-form">
+        <section>
             <span>Add a new item to your weekly agenda</span>
-            <form onSubmit={handleSubmit}>
+            <form 
+                className="new-item-form"
+                onSubmit={handleSubmit}>
                 <select
+                    className="type-change"
                     name="form-type"
                     onChange={handleTypeChange}
                     >
@@ -72,6 +75,7 @@ function Form({ addNewItem }) {
                     <label>
                         <input
                         onChange={handleChange}
+                        className="description"
                         type="number"
                         placeholder="% completed"
                         name="progress"
@@ -81,13 +85,16 @@ function Form({ addNewItem }) {
                     <label>
                         <input
                         onChange={handleChange}
+                        className="description"
                         type="text"
                         placeholder="Time for task"
                         name="time"
                         value={taskData.time}
                         />
                     </label>}
-                <button type="submit">Submit</button>
+                <button 
+                className="submit-btn"
+                type="submit">Submit</button>
             </form>
         </section>
     )

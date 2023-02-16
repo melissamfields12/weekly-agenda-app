@@ -1,10 +1,13 @@
 body {
-  background-color: lightyellow;
+  background-color: #EAFFF1;
   margin: 0.25rem auto;
   padding: 1rem 1rem;
   max-width: 700px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 17px;
+}
+.weekly-agenda {
+  color: #558E9E;
 }
 
 .goals {
@@ -21,7 +24,7 @@ body {
   column-gap: 1rem;
   align-items: center;
   border: outset;
-  border-color: rgb(137, 177, 155);
+  border-color: #558E9E;
   border-radius: 8px;
 }
 
@@ -29,14 +32,36 @@ body {
   list-style: none;
   border-radius: 1px;
 }
+
 .task-list li {
   display: grid;
   margin: 0.7rem 0;
   padding: 0.5rem;
+  background-color: #EAFFF1;
   grid-template-columns: 0.5fr 3fr 80px 60px;
   column-gap: 1rem;
   align-items: center;
   border: outset;
-  border-color: rgb(137, 177, 155);
+  border-color: #677CA7;
   border-radius: 8px;
+}
+.delete-btn {
+  width: 35px;
+  color: #905275;
+  border: 2px solid #905275;
+}
+.type-change {
+  border: #905275;
+  color: #905275;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.submit-btn {
+  color: #905275;
+  border: 2px solid #905275;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: white;
+}
+.description {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
