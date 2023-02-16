@@ -26,7 +26,7 @@ function TaskList({ task, updateTaskList, onDeleteTask }) {
         }
 
     return (
-            <li>
+            <li className={task.isCompleted ? "is-complete" : ""}>
             <input type="checkbox" onClick={updateTask}/>
             <span>{name}</span>
             <span>{time}</span>
