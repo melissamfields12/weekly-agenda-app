@@ -47,6 +47,17 @@ function App() {
     setTasks(updatedTasks)
   }
 
+  function updateProgress(updatedGoal) {
+    const updatedGoals = goals.map((goal) => {
+        if (goal.id === updatedGoal.id) {
+            return updatedGoal;
+        } else {
+            return goal;
+        }
+    })
+    setGoals(updatedGoals)
+}
+
   return (
     <div>
       <NavBar />
@@ -57,7 +68,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/weeklygoals">
-          <GoalContainer goals={goals} onDeleteGoal={onDeleteGoal}/>
+          <GoalContainer goals={goals} onDeleteGoal={onDeleteGoal} updateProgress={updateProgress}/>
         </Route>
         <Route path="/weeklytasks">
           <TaskContainer tasks={tasks} updateTaskList={updateTaskList} onDeleteTask={onDeleteTask}/>
