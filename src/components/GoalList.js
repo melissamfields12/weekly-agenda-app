@@ -30,13 +30,12 @@ function GoalList({ goal, onDeleteGoal, updateProgress }) {
             <li>
             <span>{name}</span>
             <br></br>
-            {/* <span className="progress">{progress}% completed</span> */}
             <input
-            onChange={updateGoalProgress} 
+            onChange={updateGoalProgress}
             type="range"
             min="0"
             max="100"
-            // step="10"
+            step="10"
             className="progress-bar"
             name={progress}
             value={goalBar}
