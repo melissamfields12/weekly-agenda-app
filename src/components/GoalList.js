@@ -5,18 +5,20 @@ function GoalList({ goal, onDeleteGoal, updateProgress }) {
 
     const [goalBar, setGoalBar] = useState(progress);    
 
-    function updateGoalProgress(e) {
-        setGoalBar(parseInt(e.target.value))
+    const updateGoalProgress = (e) => {
+        setGoalBar(e.target.value)
         fetch(`http://localhost:3004/goals/${goal.id}`, {
             method: 'PATCH',
             headers: {
                 "Content-type": "application/json",
             },
-            body: JSON.stringify({progress: goalBar})
+            body: JSON.stringify({progress: e.target.value})
         })
             .then(resp => resp.json())
             .then(updatedGoal => updateProgress(updatedGoal))
-    }
+        }
+              
+    
 
     const deleteGoal = () => {
         fetch(`http://localhost:3004/goals/${goal.id}`, {

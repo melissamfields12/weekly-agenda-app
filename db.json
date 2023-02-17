@@ -47,32 +47,32 @@
     {
       "id": 1,
       "name": "Exercise for at least two hours total",
-      "progress": 50
+      "progress": "50"
     },
     {
       "id": 2,
       "name": "Meditate at least three times",
-      "progress": 40
+      "progress": "40"
     },
     {
       "id": 3,
       "name": "Get some yardwork done",
-      "progress": 0
+      "progress": "0"
     },
     {
       "id": 4,
       "name": "Begin a new book",
-      "progress": 0
+      "progress": "0"
     },
     {
       "id": 5,
       "name": "Practice coding",
-      "progress": 80
+      "progress": "80"
     },
     {
       "id": 6,
       "name": "Find a new trail to take a walk on",
-      "progress": 0
+      "progress": "0"
     }
   ]
 }

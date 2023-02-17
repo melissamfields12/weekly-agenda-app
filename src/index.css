@@ -73,10 +73,9 @@ body {
 input[type='range'] {
   -webkit-appearance: none;
   height: 5px;
-  background: grey;
+  background: #905275;
   border-radius: 5px;
-  background-image: linear-gradient(#905275, #905275);
-  background-repeat: no-repeat;
+
 }
 input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -86,14 +85,6 @@ input[type='range']::-webkit-slider-thumb {
   background: #905275;
   cursor: pointer;
 }
-input[type='range']::-webkit-slider-runnable-track {
-  -webkit-appearance: none;
-  box-shadow: none;
-  border: none;
-  background: transparent;
+input[type="range"]::-webkit-slider-thumb:hover {
+  box-shadow: #90527550 0px 0px 0px 8px;
 }
-
-/* .progress-bar {
-  background-image: linear-gradient #905275;
-
-} */
