@@ -41,18 +41,12 @@
       "name": "Fold the laundry",
       "time": "30 min",
       "isCompleted": false
-    },
-    {
-      "name": "Test",
-      "time": "5 min",
-      "isCompleted": false,
-      "id": 8
     }
   ],
   "goals": [
     {
       "id": 1,
-      "name": "Exercise for at least two hours total",
+      "name": "Exercise for at least two hours",
       "progress": "50"
     },
     {

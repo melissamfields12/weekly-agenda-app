@@ -26,7 +26,7 @@ function GoalCard({ goal, onDeleteGoal, updateProgress }) {
         })
             .then(resp => resp.json())
             .then(() => onDeleteGoal(goal))
-    }
+        }
 
     return (
             <li>

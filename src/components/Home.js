@@ -11,7 +11,7 @@ function Home() {
         fetch("http://localhost:3004/quotes")
             .then(resp => resp.json())
             .then(quoteData => setAllQuotes(quoteData))
-}, [])
+    }, [])
 
     useEffect(() => {
         if(allQuotes.length) getQuote();
@@ -27,8 +27,11 @@ function Home() {
     return (
         <div className="quote-card">
             <p>{quote.text}</p>
-            <p>{quote.author}</p>
-            <button onClick={getQuote}>New quote</button>
+            <p>-{quote.author}</p>
+            <button 
+            className="new-quote"
+            onClick={getQuote}
+            >New quote</button>
         </div>
     )
 }

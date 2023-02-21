@@ -11,7 +11,6 @@ function App() {
   const [goals, setGoals] = useState ([]);
   const [tasks, setTasks] = useState ([]);
  
-
   useEffect(() => {
     fetch("http://localhost:3004/goals")
       .then(resp => resp.json())
@@ -20,19 +19,7 @@ function App() {
     fetch("http://localhost:3004/tasks")
       .then(resp => resp.json())
       .then(taskList => setTasks(taskList));
-    
-    // fetch("http://localhost:3004/quotes")
-    //   .then(resp => resp.json())
-    //   .then(quoteData => setRandomQuotes(quoteData))
   }, [])
-
-  // const quoteToDisplay() {
-  //   const randomNumber = Math.floor(Math.random() * (randomQuote.length));
-  //   const randomQuote = randomQuotes[randomNumber]
-  //   setRandomQuotes(randomQuote)
-  // }
-
-  
 
   function onDeleteTask(deletedTask) {
     const currentTasks = tasks.filter((task) => task.id !== deletedTask.id)
