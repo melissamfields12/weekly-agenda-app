@@ -41,6 +41,12 @@
       "name": "Fold the laundry",
       "time": "30 min",
       "isCompleted": false
+    },
+    {
+      "name": "Test",
+      "time": "5 min",
+      "isCompleted": false,
+      "id": 8
     }
   ],
   "goals": [

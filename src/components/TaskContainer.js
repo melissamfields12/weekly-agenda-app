@@ -1,9 +1,9 @@
 import React from "react";
-import TaskList from "./TaskList";
+import TaskCard from "./TaskCard";
 
 function TaskContainer({ tasks, updateTaskList, onDeleteTask }) {
     const mappedTasks = tasks.map((task) => 
-    <TaskList 
+    <TaskCard 
         key={task.id}
         task={task}
         updateTaskList={updateTaskList}
