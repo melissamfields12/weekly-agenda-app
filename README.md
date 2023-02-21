@@ -8,8 +8,8 @@ A weekly agenda app that aims to help users to get motivated with some productiv
 
 To install this app, in your terminal type the following:
 
-`git clone git@github.com:melissamfields12/weekly-agenda-app.git`
-`cd weekly-agenda-app`
+`git clone git@github.com:melissamfields12/weekly-agenda-app.git`  
+`cd weekly-agenda-app`  
 `code .`
 
 ### Server: db.json
@@ -20,7 +20,7 @@ To start the server, in your terminal type the following:
 
 Open another terminal window, navigate to weekly-agenda-app and type the following:
 
-`npm install`
+`npm install`  
 `npm start`
 
 ### Client-Side Routing
