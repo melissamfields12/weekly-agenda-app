@@ -84,82 +84,82 @@
   "quotes": [
     {
       "id": 1,
-      "quote": "Pleasure in the job puts the perfection in the work.",
+      "text": "Pleasure in the job puts the perfection in the work.",
       "author": "Aristotle"
     },
     {
       "id": 2,
-      "quote": "It is not the mountain we conquer, but ourselves.",
+      "text": "It is not the mountain we conquer, but ourselves.",
       "author": "Sir Edmund Hillary"
     },
     {
       "id": 3,
-      "quote": "If there are nine rabbits on the ground, if you want to catch one, just focus on one.",
+      "text": "If there are nine rabbits on the ground, if you want to catch one, just focus on one.",
       "author": "Jack Ma"
     },
     {
       "id": 4,
-      "quote": "You may delay, but time will not.",
+      "text": "You may delay, but time will not.",
       "author": "Benjamin Franklin"
     },
     {
       "id": 5,
-      "quote": "Productivity is never an accident. It is always the result of a commitment to excellence, intelligent planning, and focused effort.",
+      "text": "Productivity is never an accident. It is always the result of a commitment to excellence, intelligent planning, and focused effort.",
       "author": "Paul J. Meyer"
     },
     {
       "id": 6,
-      "quote": "If we all did the things we are capable of doing, we would literally astound ourselves.",
+      "text": "If we all did the things we are capable of doing, we would literally astound ourselves.",
       "author": "Thomas Edison"
     },
     {
       "id": 7,
-      "quote": "The way to get started is to quit talking and begin doing.",
+      "text": "The way to get started is to quit talking and begin doing.",
       "author": "Walt Disney"
     },
     {
       "id": 8,
-      "quote": "While one person hesitates because he feels inferior, the other is busy making mistakes and becoming superior.",
+      "text": "While one person hesitates because he feels inferior, the other is busy making mistakes and becoming superior.",
       "author": "Henry C. Link"
     },
     {
       "id": 9,
-      "quote": "You must remain focused on your journey to greatness.",
+      "text": "You must remain focused on your journey to greatness.",
       "author": "Les Brown"
     },
     {
       "id": 10,
-      "quote": "The big secret in life is that there is no big secret. Whatever your goal, you can get there if you're willing to work.",
+      "text": "The big secret in life is that there is no big secret. Whatever your goal, you can get there if you're willing to work.",
       "author": "Oprah Winfrey"
     },
     {
       "id": 11,
-      "quote": "Nothing is particularly hard when you divide it into small jobs.",
+      "text": "Nothing is particularly hard when you divide it into small jobs.",
       "author": "Henry Ford"
     },
     {
       "id": 12,
-      "quote": "You don't have to see the whole staircase, just take the first step.",
+      "text": "You don't have to see the whole staircase, just take the first step.",
       "author": "Martin Luther King"
     },
     {
       "id": 13,
-      "quote": "If you spend too much time thinking about a thing, you'll never get it done.",
+      "text": "If you spend too much time thinking about a thing, you'll never get it done.",
       "author": "Bruce Lee"
     },
     {
       "id": 14,
-      "quote": "Motivation is what gets you started. Habit is what keeps you going.",
+      "text": "Motivation is what gets you started. Habit is what keeps you going.",
       "author": "Jim Rohn"
     },
     {
       "id": 15,
-      "quote": "Practice isn't the thing you do once you're good. It's the thing you do that makes you good.",
+      "text": "Practice isn't the thing you do once you're good. It's the thing you do that makes you good.",
       "author": "Malcolm Gladwell"
     },
     {
       "id": 16,
-      "quote": "Our greatest glory is not in never failing, but in getting up every time we do.",
+      "text": "Our greatest glory is not in never failing, but in getting up every time we do.",
       "author": "Confucius"
     }
   ]
