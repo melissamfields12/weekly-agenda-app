@@ -5,6 +5,7 @@ function Home() {
         text: '',
         author: ''
     });
+    
     const [allQuotes, setAllQuotes] = useState([]);
 
     useEffect(() => {
