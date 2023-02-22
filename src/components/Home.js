@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 function Home() {
     const [quote, setQuote] = useState({
-        quote: '',
+        text: '',
         author: ''
     });
     const [allQuotes, setAllQuotes] = useState([]);
